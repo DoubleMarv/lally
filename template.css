@@ -70,7 +70,7 @@ max-width: 100%;
 
 @media screen and (min-width:1024px) {
 .mobile-grid-3{
-    width: 33.33% !important;
+    width: 32.9% !important;
     display: inline-block;
 } 
 }

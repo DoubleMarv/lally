@@ -7,33 +7,59 @@
 .bluetext{
 	color: #1F3145
 }
+.blueback{
+	background-color: #1F3145;
+	background: #1F3145;
+}
 .orangetext{
 	color: #CB742C;
+}
+.orangeback{
+	background-color: #CB742C;
+	background: #CB742C;
 }
 .yellowtext{
 	color: #E4BA54
 }
-
+.yellowback{
+	background-color: #E4BA54;
+	background: #E4BA54;
+}
 .greytext{
 	color: #6a6a6a
+}
+.greyback{
+	background-color: #6a6a6a;
+	background: #6a6a6a;
 }
 .blacktext{
 	color: #2d2f2c
 }
+.blackback{
+	background-color: #2d2f2c;
+	background: #2d2f2c;
+}
 .greytext{
 	color: #eaeaea
+}
+.greyback{
+	background-color: #eaeaea;
+	background: #eaeaea;
 }
 
 .seriffont{
 font-family: 'Playfair Display', serif !important;
+    font-style: normal !important;
 }
 
 .subheadlinefont{
 font-family: 'Work Sans', sans-serif !important;
+	    font-style: normal !important;
 font-weight: 500;
 }
 
 .bodyfont{
 font-family: 'Work Sans', sans-serif !important;
+	    font-style: normal !important;
 font-weight: 300;
 }

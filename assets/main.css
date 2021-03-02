@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@300;500&display=swap');
+
+.greentext{
+	color: #406550
+}
+
+.bluetext{
+	color: #1F3145
+}
+.orangetext{
+	color: #CB742C;
+}
+.yellowtext{
+	color: #E4BA54
+}
+
+.greytext{
+	color: #6a6a6a
+}
+.blacktext{
+	color: #2d2f2c
+}
+.greytext{
+	color: #eaeaea
+}
+
+.seriffont{
+font-family: 'Playfair Display', serif !important;
+}
+
+.subheadlinefont{
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 500;
+}
+
+.bodyfont{
+font-family: 'Work Sans', sans-serif !important;
+font-weight: 300;
+}
+
+.inner{
+	background: #33bec3 !important;
+}

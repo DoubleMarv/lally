@@ -257,6 +257,19 @@ font-family: 'Work Sans', sans-serif !important;
 /*** ********** *****/
 /********************/
 
+
+.listable-div-left, .listable-div-right{
+    font-family: 'Work Sans', sans-serif !important;
+      font-style: normal !important;
+font-weight: 300;
+font-size: 1rem !important;
+}
+
+
+
+
+
+
 table.listable {
   width: 100%;
   margin: auto;

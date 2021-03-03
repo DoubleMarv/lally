@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@300;500&display=swap');
 
+
+body{
+	overflow-x: hidden;
+}
 .greentext{
 	color: #406550
 }
@@ -39,12 +43,60 @@
 	background-color: #2d2f2c;
 	background: #2d2f2c;
 }
-.greytext{
+.lightgreytext{
 	color: #eaeaea
 }
-.greyback{
+.lightgreyback{
 	background-color: #eaeaea;
 	background: #eaeaea;
+}
+
+.greentext{
+	color: #406550;
+}
+
+.greenback{
+		background-color: #406550;
+	background: #406550;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+.fullwidthgreenstrip{
+position: relative;
+}
+
+.fullwidthgreenstrip:before{
+		content: '';
+		background-color: #406550;
+	background: #406550;
+	left: -999px;
+	width: 999px;
+	top: 0;
+	position: absolute;
+	height: 100%;
+}
+.fullwidthgreenstrip:after{
+	content: '';
+		background-color: #406550;
+	background: #406550;
+		right: -999px;
+	width: 999px;
+	top: 0;
+	position: absolute;
+		height: 100%;
+}
+
+
+/********************/
+/*** typography *****/
+/********************/
+.margin-top-bott-one{
+	margin: 1em 0;
+}
+.margin-top-bott-half{
+	margin: 0.5em 0;
 }
 
 .seriffont{
@@ -64,13 +116,93 @@ font-family: 'Work Sans', sans-serif !important;
 font-weight: 300;
 }
 
+
+.centeredtext{
+	text-align: center;
+}
+
+.thintext{
+font-family: 'Work Sans', sans-serif !important;
+	    font-style: normal !important;
+font-weight: 300;
+}
+
+
+.mainheading{
+		font-size: 2.2rem !important;
+}
+
+.midheading{
+	font-size: 2rem;
+}
+
+
+.genoversubtitle{
+font-family: 'Work Sans', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 1rem !important;
+    color: #2d2f2c;
+    margin: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.gensubtitle{
+font-family: 'Playfair Display', serif !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 1.9rem !important;
+    color: #2d2f2c;
+margin: 0.1em 0 1em;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/********************/
+/*** ********** *****/
+/********************/
+
+
+.gridimage-holdsimage{
+	padding: 0 !important;
+	text-align: center;
+}
+
+.gridimage-holdstitle{
+font-family: 'Playfair Display', serif !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 16px !important;
+    background: #333;
+    color: #fff;
+    margin: 0.5em 0;
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-grid-3{
+margin: 0px .5% .5% .5%;
+	background-color: #2d2f2c;
+	background: #2d2f2c;
+	text-align: center;
+	min-height: 13rem;
+} 
+
+
 .mobile-grid-3 img{
 max-width: 100%;
 } 
 
+
+
 @media screen and (min-width:1024px) {
 .mobile-grid-3{
-    width: 32.9% !important;
+    width: 30% !important;
     display: inline-block;
 } 
 }
@@ -86,4 +218,95 @@ display: inline-block;
 width: 100% !important;	
 display: inline-block;
 }               
+}
+
+
+.preparedclass{
+background: #fff !important;
+	text-align: center;
+	padding: 2em;
+}
+
+.preparedclass .mainheading,
+.preparedclass .subheadlinefont,
+.preparedclass .subsubheadlinefont{
+color: #2d2f2c !important;
+color: #2d2f2c !important;
+}
+
+.preparedclass .subheadlinefont{
+	font-family: 'Work Sans', sans-serif !important;
+	    font-style: normal !important;
+font-weight: 300;
+font-size: 1.2rem !important;
+}
+
+.preparedclass .subsubheadlinefont{
+font-family: 'Work Sans', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 1rem !important;
+    color: #2d2f2c !important;
+    margin: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+
+table.listable {
+  width: 100%;
+  margin: auto;
+}
+table.listable tr {
+  width: 100%;
+}
+table.listable th, table.listable td {
+  box-sizing: border-box;
+  padding: 15px;
+}
+table.listable thead th {
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+table.listable tbody {
+  text-align: left;
+}
+table.listable tbody th {
+  background: #eee;
+}
+
+
+@media only screen and (max-width: 420px) {
+  body {
+    width: 100%;
+  }
+
+
+  table.listable tr {
+    display: block;
+    width: 100%;
+  }
+  table.listable thead {
+    display: none;
+  }
+  table.listable tbody {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  table.listable tbody th {
+    list-style: none;
+  }
+  table.listable tbody td {
+    margin-left: 40px;
+  }
+  table.listable tbody th, table tbody td {
+    width: 100%;
+    display: list-item;
+  }
 }
